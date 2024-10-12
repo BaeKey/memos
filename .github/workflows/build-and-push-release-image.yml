@@ -42,7 +42,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            neosmemo/memos
+            ${{ secrets.DOCKER_USERNAME }}/memos
           tags: |
             type=raw,value=latest
             type=semver,pattern={{version}},value=${{ env.VERSION }}
