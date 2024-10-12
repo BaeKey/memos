@@ -5,7 +5,6 @@ import { useGlobalStore, useLayoutStore, useUserStore } from "@/store/module";
 import { useTranslate } from "@/utils/i18n";
 import { resolution } from "@/utils/layout";
 import Icon from "./Icon";
-import UpgradeVersionView from "./UpgradeVersionBanner";
 import UserBanner from "./UserBanner";
 
 const Header = () => {
@@ -143,7 +142,6 @@ const Header = () => {
                   <Icon.Settings className="mr-3 w-6 h-auto opacity-70" /> {t("common.settings")}
                 </>
               </NavLink>
-              <UpgradeVersionView />
             </>
           )}
           {isVisitorMode && (
